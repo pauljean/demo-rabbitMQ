@@ -67,9 +67,7 @@ func main() {
 	)
 	failOnError(err, "An error Occured on message consumption.")
 
-	forever := make(func name(rw http.ResponseWriter, req *http.Request) {
-		
-	} bool)
+	forever := make(chan bool)
 
 	go func() {
 		for m := range msgs {
